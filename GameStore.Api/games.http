@@ -1,0 +1,26 @@
+GET http://localhost:5191/games
+
+###
+GET http://localhost:5191/games/1
+
+###
+POST http://localhost:5191/games
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genre": "Kids and Family",
+  "price": 19.99,
+  "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5191/games/2
+Content-Type: application/json
+
+{
+  "name": "Mobile Legends",
+  "genre": "Strategy",
+  "price": 0.99,
+  "releaseDate": "2020-07-11"
+}
